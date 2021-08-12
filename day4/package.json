@@ -1,0 +1,17 @@
+{
+    "name":"day4",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "static web server example",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords":[
+        "nodejs;statichtpp"
+    ],
+    "author": "gbox3d",
+    "license": "ISC"
+    
+}
+  
