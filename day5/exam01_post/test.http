@@ -1,0 +1,5 @@
+### echo post test
+POST http://localhost:8090/echo
+my-custom-header : 'hi'
+
+hello post
