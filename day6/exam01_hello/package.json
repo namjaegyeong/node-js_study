@@ -1,0 +1,25 @@
+{
+  "name": "exam01_hello",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "cross-env NODE_ENV=dev nodemon index",
+    "debug" : "cross-env NODE_ENV=debug nodemon index",
+    "start" : "cross-env NODE_ENV=product node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dot": "^1.1.3",
+    "dotenv": "^10.0.0",
+    "e": "^0.2.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.12"
+  }
+}

@@ -1,0 +1,5 @@
+## test add user
+GET http://localhost:8080/api/v1/addUser/name/Tommy/age/28
+
+## test add user search param
+GET http://localhost:8080/api/v1/addUser?name=Tommy&age/28
