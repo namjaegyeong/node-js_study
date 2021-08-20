@@ -1,0 +1,2 @@
+## get todos
+GET https://jsonplaceholder.typicode.com/todos

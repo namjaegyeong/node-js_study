@@ -1,0 +1,31 @@
+<template>
+  <div class="about">
+    <h1>This is an about page</h1>
+    <button @click="gohome">홈으로..</button>
+  </div>
+</template>
+
+<script>
+export default{
+  name:"About",
+  methods :{
+    goHome(){
+      this.$router.push({
+        "path" : "/"
+      })
+    }
+  }
+}
+export default defineComponent({
+  setup() {
+    
+  },
+})
+</script>
+
+
+<style scoped>
+  h1{
+    color:red;
+  }
+</style>

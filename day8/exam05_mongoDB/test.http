@@ -1,0 +1,14 @@
+### test get hello
+GET http://localhost:8080/hello
+
+### test post insert
+POST http://localhost:8080/api/v1/memo/insert
+Content-Type : application/json
+
+{"title":"test9","text":"텍스트 내용이 어쩌고 저쩌고..."}
+
+### test get find
+GET http://localhost:8080/api/v1/memo/find/skip/0/limit/100
+
+### test get delete
+GET http://localhost:8080/api/v1/memo/delete/id/kljklj
