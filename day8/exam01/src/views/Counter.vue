@@ -1,20 +1,20 @@
 <template>
     <div>
         <h1> The Counter </h1>
-        <h2>{{counter}}</h2>
+        <h2>{{counter}}</h2>        
         <button @click="increase"> 증가 </button>
     </div>
 </template>
 <script>
 export default {
-    name:"counter",
-    data(){
-        return{
-            counter : 0
+    name : "Counter",
+    data() {
+        return {
+            counter : 0            
         }
     },
     methods :{
-        increase(){
+        increase() {
             this.counter++
         }
     }

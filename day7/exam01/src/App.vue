@@ -1,39 +1,36 @@
 <template>
   <div>
-      <h1>
-        {{msg}}
-      </h1>
-
-      <button @click="changeMsg('hello')"> change1 </button>
-      <button @click="changeMsg('world')"> change2 </button>
-      <button @click="changeMsg('vue')"> change3 </button>
+    <h1>
+      {{msg}}
+    </h1>
+    <button @click="changeMsg('hello')"> change1 </button>
+    <button @click="changeMsg('world')"> change2 </button>
+    <button @click="changeMsg('vue')"> change3 </button>
   </div>
 
   <div>
     <h2>reactive Counter</h2>
     <p>{{counter}}</p>
-    <button @click="increaseCount">count+</button>
-    <button @click="decreaseCount">count-</button>
-    <button @click="zeroCount">reset</button>
+    <button @click="increaseCount"> count + </button>
+    <button @click="decreaseCount"> count - </button>
+    <button @click="zeroCount"> reset </button>
   </div>
 
   <div>
-    <h2>none reactive</h2>
+    <h2> none reactive </h2>
     <h5>{{myCounter}}</h5>
-    <button @click="zeroCount2">reset</button>
-  </div>
-
+    <button @click="zeroCount2"> reset </button>
+  </div> 
 </template>
 
 <script>
-
-
+import { onUpdated } from '@vue/runtime-core'
 export default {
   name: 'App',
   components: {},
   data() {
     return {
-      msg : '어서와 뷰는 처음이지?',
+      msg : '어서와 뷰는 첨이지?',
       counter : 0
     }
   },
@@ -41,20 +38,20 @@ export default {
     changeMsg(msg) {
       this.msg = msg
     },
-    increaseCount(){
+    increaseCount() {
       this.counter++
     },
-    decreaseCount(){
+    decreaseCount() {
       this.counter--
     },
-    zeroCount(){
-      this.counter=0
+    zeroCount() {
+      this.counter = 0
     },
-    zeroCount2(){
-      this.myCounter=0
+    zeroCount2() {
+      this.myCounter = 0
     }
   },
-  created(){
+  created() {
     this.counter = 100
     this.myCounter = 200 //none reactive
   }
@@ -62,12 +59,12 @@ export default {
 </script>
 
 <style scoped>
-  h1{
-    color : red;
-  }
-  div{
-    border:solid black 1px;
-    margin-top: 2px;
-    padding:5px;
-  }
+h1 {
+  color: red;
+}
+div {
+  border: solid black 1px;
+  margin-top: 2px;
+  padding: 5px;
+}
 </style>

@@ -1,24 +1,23 @@
 <template>
   <h1>{{score}}</h1>
   <p>{{mousePos.x}},{{mousePos.y}}</p>
-  <div class="blue-box" @mousemove="onMouseMove($event,1)"></div>
-  <div class="red-box" @mousemove="onMouseMove($event,-1)"></div>
+  <div class="blue-box" @mousemove="onMouseMove($event,1)" ></div>
+  <div class="red-box" @mousemove="onMouseMove($event,-1)" ></div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  data(){
+  name: "App",
+  data() {
     return {
       score : 0,
-      mousePos:{x:0,y:0}
+      mousePos : {x:0,y:0}
     }
   },
-  method : {
-    onMouseMove(evt,val){
-      this.mousePos.x=evt.pageX
-      this.mousePos.y=evt.pageY
+  methods : {
+    onMouseMove(evt,val) {
+      this.mousePos.x = evt.pageX
+      this.mousePos.y = evt.pageY
       this.score += val
     }
   }
@@ -26,16 +25,14 @@ export default {
 </script>
 
 <style scoped>
-
-.blue-box{
+.blue-box {
   width: 200px;
   height: 200px;
-  background-color:blue;
+  background-color: blue;
 }
-.red-box{
+.red-box {
   width: 200px;
   height: 200px;
-  background-color:red;
+  background-color: red;
 }
-
 </style>

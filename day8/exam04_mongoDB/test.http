@@ -1,0 +1,15 @@
+### test get hello
+GET http://localhost:8000/hello
+
+### test post insert
+POST http://localhost:8000/api/v1/memo/insert
+Content-Type: application/json
+
+{"title":"test9","text":"프로젝트 완성할 것이다!"}
+
+### test get find
+GET http://localhost:8000/api/v1/memo/find/skip/3/limit/100
+
+
+### test get delete
+GET http://localhost:8000/api/v1/memo/delete/id/611e07589616b67cd9fa028a

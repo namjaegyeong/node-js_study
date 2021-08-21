@@ -1,4 +1,4 @@
-<template>
+<template >
     <div>
         <h1>The Counter</h1>
         <h2>{{counter}}</h2>
@@ -9,30 +9,28 @@
 </template>
 <script>
 export default {
-    name:"Counter",
+    name : "Counter",  
     computed : {
-        counter(){
-            if(localStorage.getItem('counter')!=undefined){
-
-            }
+        counter() {            
             return this.$store.state.counter
         }
     },
-    methods:{
-        inc(){
+    methods: {
+        inc() {
             this.$store.commit('inc');
-            //this.$store.state.counter++
+            // this.$store.state.counter++
         },
-        dec(){
+        dec() {
             this.$store.commit('dec');
         },
-        clear(){
-            this.$store.commit('clear');
-            value : 10
+        clear() {
+            this.$store.commit('clear',{
+                value : 100
+            });
         }
     }
 }
 </script>
-<style>
+<style scoped>
     
 </style>

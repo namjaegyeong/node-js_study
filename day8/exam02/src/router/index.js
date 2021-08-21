@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 
 const routes = [
@@ -10,7 +10,7 @@ const routes = [
   {
     path: '/counter',
     name: 'Counter',
-    component: () => import('../views/Counter.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Counter.vue')
   },
   {
     path: '/about',
@@ -23,7 +23,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
