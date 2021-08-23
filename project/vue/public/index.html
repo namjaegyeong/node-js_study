@@ -6,12 +6,44 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      #acount {
+        position: relative;
+        width: 500px;
+        padding: 20px 30px;
+        margin: 0 auto;
+        letter-spacing: -.2px;
+      }
+      .sc_login {
+        padding: 16px 16px 12px 17px;
+        background-color: #f7f9fa;
+        border: 1px solid #dae1e6;
+      }
+      .login_msg{
+        padding-left: 3px;
+        color: grey;
+      }
+      .link_login {
+        display: block;
+        padding: 15px 0;
+        margin-top: 11px;
+        background-color: #19ce60;
+        border: 1px solid #15c654;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
     <!-- built files will be auto injected -->
+    <div id="app"></div>
   </body>
 </html>
